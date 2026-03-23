@@ -1,0 +1,276 @@
+.gallery-page {
+  background: white;
+  min-height: 100vh;
+}
+
+/* Banner Styles */
+.page-banner {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Gallery Content */
+.gallery-wrapper {
+  max-width: 1200px;
+  margin: -80px auto 80px;
+  background: white;
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 3;
+  border: 1px solid #F0EAE0;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery-header h2 {
+  font-size: 1.8rem;
+  color: #B8860B;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-header p {
+  font-size: 0.9rem;
+  color: #5A5A5A;
+}
+
+.gallery-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery-highlights span {
+  font-size: 0.85rem;
+  color: #C9A03D;
+  font-weight: 500;
+}
+
+/* Filters */
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 24px;
+  background: transparent;
+  border: 1px solid #E5D9CC;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #5A5A5A;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #C9A03D;
+  border-color: #C9A03D;
+  color: white;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 4/3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(184, 134, 11, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: white;
+  gap: 10px;
+}
+
+.gallery-overlay svg {
+  font-size: 2rem;
+}
+
+.gallery-overlay p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-note {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #FEFAF2;
+  border-radius: 12px;
+}
+
+.gallery-note p {
+  color: #B8860B;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  background: white;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.modal-content img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.modal-content h4 {
+  text-align: center;
+  margin-top: 1rem;
+  color: #B8860B;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #B8860B;
+}
+
+@media (max-width: 768px) {
+  .page-banner {
+    height: 300px;
+  }
+  
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  
+  .gallery-wrapper {
+    margin: -40px 1rem 60px;
+    padding: 1.5rem;
+  }
+  
+  .gallery-header h2 {
+    font-size: 1.4rem;
+  }
+  
+  .gallery-highlights {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

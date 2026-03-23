@@ -1,0 +1,63 @@
+:root {
+  /* Colors - Based on Logo (Gold/Brown Theme) */
+  --primary: #C9A03D;
+  --primary-dark: #B8860B;
+  --primary-light: #DAB866;
+  --secondary: #5D3A1A;
+  --accent: #E8C468;
+  --gold-light: #F5E6D3;
+  
+  --text-dark: #2C2C2C;
+  --text-light: #5A5A5A;
+  --text-muted: #8A8A8A;
+  --text-white: #FFFFFF;
+  
+  --bg-white: #FFFFFF;
+  --bg-light: #FDF8F0;
+  --bg-gray: #FAF7F2;
+  --bg-dark: #1A1A1A;
+  --bg-warm: #FEFAF2;
+  
+  --border-light: #F0EAE0;
+  --border-medium: #E5D9CC;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.15);
+  
+  /* Spacing */
+  --container-max: 1280px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 5rem;
+  --spacing-3xl: 7rem;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-2xl: 40px;
+  --radius-full: 9999px;
+  
+  /* Fonts */
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Playfair Display', serif;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+  }
+}

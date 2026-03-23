@@ -1,0 +1,128 @@
+.about-company {
+  padding: 4rem 0;
+  background: white;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.about-image {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #C9A03D, #B8860B);
+  padding: 15px 25px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+}
+
+.experience-badge span {
+  font-size: 1.8rem;
+  font-weight: 800;
+  display: block;
+  line-height: 1;
+}
+
+.experience-badge p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #B8860B;
+  margin-bottom: 0.5rem;
+}
+
+.about-content h3 {
+  font-size: 1.2rem;
+  color: #C9A03D;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 0.95rem;
+  color: #5A5A5A;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.expertise-badge {
+  background: #FEFAF2;
+  padding: 1rem;
+  border-radius: 50px;
+  margin: 1.5rem 0;
+  text-align: center;
+  border: 1px solid #F0EAE0;
+}
+
+.expertise-badge span {
+  color: #B8860B;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.social-link {
+  text-align: center;
+}
+
+.facebook-link {
+  display: inline-block;
+  background: #1877F2;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.facebook-link:hover {
+  background: #0C63D4;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .about-content h3 {
+    font-size: 1rem;
+  }
+  
+  .experience-badge {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 18px;
+  }
+  
+  .experience-badge span {
+    font-size: 1.3rem;
+  }
+}
