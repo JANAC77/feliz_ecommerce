@@ -21,7 +21,7 @@ const Contact = () => {
       {/* Banner Section */}
       <div className="page-banner">
         <div className="banner-bg">
-          <img src="/images/image2.jpg" alt="Contact Us Banner" />
+          <img src="/images/image2.jpeg" alt="Contact Us Banner" />
         </div>
         <div className="banner-overlay"></div>
         <div className="container banner-content">
@@ -41,15 +41,15 @@ const Contact = () => {
                 <div className="info-icon"><FaMapMarkerAlt /></div>
                 <div>
                   <h4>Address</h4>
-                  <p>Mint Decor, No.13/221,<br />Kokkappilly P.O<br />Thiruvananthapuram, Kerala 695205</p>
+                  <p>1461, 5th Block, MS Ramaiah North City,<br />Manayata Tech Park, Nagavara,<br />Bengaluru, Karnataka 560077</p>
                 </div>
               </div>
               
               <div className="info-card">
-                <div className="info-icon"><FaPhone /></div>
+                <div className="info-icon"><FaPhone className="rotate-icon"/></div>
                 <div>
                   <h4>Phone</h4>
-                  <p>Sales: 7902220704<br />Support: 9995406254</p>
+                  <p>+91 96200 00929</p>
                 </div>
               </div>
               
@@ -57,7 +57,7 @@ const Contact = () => {
                 <div className="info-icon"><FaEnvelope /></div>
                 <div>
                   <h4>Email</h4>
-                  <p>mintdecorindia@gmail.com<br />mint@email.mintdecor@gmail.com</p>
+                  <p>felizinteriors@gmail.com<br />feliz@email.feliz@gmail.com</p>
                 </div>
               </div>
               
@@ -118,7 +118,7 @@ const Contact = () => {
           <div className="map-container">
             <iframe
               title="Location Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.7!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBangalore!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7773.771343185821!2d77.61783478392046!3d13.042948608424304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s1461%2C%205th%20Block%2C%20MS%20Ramaiah%20North%20City%2C%20Manayata%20Tech%20Park%2C%20Nagavara%2C%20Bengaluru%2C%20Karnataka%20560077!5e0!3m2!1sen!2sin!4v1774341810535!5m2!1sen!2sin"
               width="100%"
               height="350"
               style={{ border: 0 }}

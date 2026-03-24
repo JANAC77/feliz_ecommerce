@@ -1,80 +1,90 @@
-import React, { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import { FaPhone, FaBars, FaTimes, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa'
-import './Header.css'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import {
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaFacebookF,
+  FaInstagram,
+} from "react-icons/fa";
+import "./Header.css";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  const navLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/services', label: 'Services' },
-    { path: '/gallery', label: 'Gallery' },
-    { path: '/contact', label: 'Contact' }
-  ]
-
   return (
-    <header className={`main-header ${isScrolled ? 'header-scrolled' : ''}`}>
-      <div className="container header-container">
-        {/* Logo */}
-        <Link to="/" className="logo">
-          <img 
-            src="/images/logo.png" 
-            alt="Feliz Interiors Logo" 
-            className="logo-image"
-          />
-          <div className="logo-text">
-            <h2>FELIZ</h2>
-            <span>INTERIORS</span>
-          </div>
-        </Link>
-
-        <button 
-          className="mobile-menu-btn"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <FaTimes /> : <FaBars />}
-        </button>
-
-        <nav className={`nav-menu ${isMenuOpen ? 'nav-menu-open' : ''}`}>
-          {navLinks.map(link => (
-            <NavLink 
-              key={link.path} 
-              to={link.path} 
-              className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {link.label}
-            </NavLink>
-          ))}
-        </nav>
+    <header className="custom-header">
+      {/* Top Bar */}
+      <div className="top-bar">
+        <p>
+          Welcome Feliz Interiors, Based On <span>India</span>
+        </p>
       </div>
 
-      {/* Address & Contact Bar - Below Navigation */}
-      <div className="address-bar">
-        <div className="container address-container">
-          <div className="address-info">
-            <span><FaMapMarkerAlt /> Thiruvaniyur, Ernakulam</span>
-            <span><FaPhone /> 7902220705, 9995406254</span>
-            <span><FaEnvelope /> mintdecorindia@gmail.com</span>
+      {/* Main Header */}
+      <div className="main-header">
+        <div className="container header-row">
+          <div className="logo-box">
+            <img src="/images/logo.png" alt="logo" />
+            <h2 className="company-name">
+              FELIZ <span>INTERIORS</span>
+            </h2>
           </div>
-          <div className="tagline">
-            <span>Top Interior designers in Kerala</span>
+
+          <nav className="nav-menu">
+            <NavLink to="/" end>
+              Home
+            </NavLink>
+            <NavLink to="/about">About Us</NavLink>
+            <NavLink to="/services">Service</NavLink>
+            <NavLink to="/gallery">Gallery</NavLink>
+            <NavLink to="/contact">Contact Us</NavLink>
+          </nav>
+
+          {/* EMPTY RIGHT SPACE (for balance like Mint UI) */}
+          <div></div>
+        </div>
+      </div>
+
+      {/* Contact Bar */}
+      <div className="contact-bar">
+        <div className="container contact-row">
+          <div className="contact-item">
+            <FaMapMarkerAlt />
+            <div>
+              <h4>Location</h4>
+              <p>Nagavara, Bengaluru</p>
+            </div>
+          </div>
+
+          <div className="divider"></div>
+
+          <div className="contact-item">
+            <FaPhone className="rotate-icon" />
+            <div>
+              <h4>Call</h4>
+              <p>+91 96200 00929</p>
+            </div>
+          </div>
+
+          <div className="divider"></div>
+
+          <div className="contact-item">
+            <FaEnvelope />
+            <div>
+              <h4>Mail</h4>
+              <p>felizinteriors@gmail.com</p>
+            </div>
+          </div>
+
+          <div className="divider"></div>
+
+          <div className="social-icons">
+            <FaFacebookF />
+            <FaInstagram />
           </div>
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

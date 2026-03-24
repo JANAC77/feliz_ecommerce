@@ -7,9 +7,11 @@ import Services from './pages/Services'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
-
+import ScrollToTop from './ScrollToTop'
 function App() {
   return (
+     <>
+    <ScrollToTop /> 
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
@@ -20,6 +22,7 @@ function App() {
         <Route path="blog" element={<Blog />} />
       </Route>
     </Routes>
+    </>
   )
 }
 

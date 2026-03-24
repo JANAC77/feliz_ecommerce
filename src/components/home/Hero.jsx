@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-bg">
-        <img src="/images/image1.jpg" alt="Hero Background" />
+        <img src="/images/hero.jpeg" alt="Hero Background" />
       </div>
       <div className="container hero-container">
         <div className="hero-content">
@@ -16,7 +16,7 @@ const Hero = () => {
           <button className="special-offer-btn">Get Special Offer →</button>
         </div>
         <div className="hero-image">
-          <img src="/images/image1.jpg" alt="Luxury Interior Design" />
+          <img src="/images/image13.jpeg" alt="Luxury Interior Design" />
         </div>
       </div>
     </section>

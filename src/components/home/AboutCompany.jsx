@@ -7,7 +7,7 @@ const AboutCompany = () => {
       <div className="container">
         <div className="about-grid">
           <div className="about-image">
-            <img src="/images/image2.jpg" alt="About Feliz" />
+            <img src="/images/image2.jpeg" alt="About Feliz" />
             <div className="experience-badge">
               <span>10+</span>
               <p>Years of Excellence</p>

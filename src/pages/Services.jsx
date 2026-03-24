@@ -1,24 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { FaSearchPlus } from 'react-icons/fa'
 import './Services.css'
 
 const services = [
-  { id: 1, title: 'Modular Kitchen', image: '/images/image1.jpg' },
-  { id: 2, title: 'Wardrobes & Dressing Units', image: '/images/image2.jpg' },
-  { id: 3, title: 'Study Tables', image: '/images/image3.jpg' },
-  { id: 4, title: 'Cots', image: '/images/image3.jpg' },
-  { id: 5, title: 'TV Units', image: '/images/image1.jpg' },
-  { id: 6, title: 'Crockery Units', image: '/images/image2.jpg' },
-  { id: 7, title: 'Turn-Key Segment', image: '/images/image2.jpg' },
-  { id: 8, title: 'Office Segment', image: '/images/image1.jpg' }
+  { id: 1, title: 'Modular Kitchen', image: '/images/image3.jpeg' },
+  { id: 2, title: 'Wardrobes & Dressing Units', image: '/images/image4.jpeg' },
+  { id: 3, title: 'Study Tables', image: '/images/image5.jpeg' },
+  { id: 4, title: 'Cots', image: '/images/image7.jpeg' },
+  { id: 5, title: 'TV Units', image: '/images/image8.jpeg' },
+  { id: 6, title: 'Crockery Units', image: '/images/image9.jpeg' },
+  { id: 7, title: 'Turn-Key Segment', image: '/images/image10.jpeg' },
+  { id: 8, title: 'Office Segment', image: '/images/image11.jpeg' }
 ]
 
 const Services = () => {
+  const [selectedImage, setSelectedImage] = useState(null)
+
+  const openModal = (service) => {
+    setSelectedImage(service)
+    document.body.style.overflow = 'hidden'
+  }
+
+  const closeModal = () => {
+    setSelectedImage(null)
+    document.body.style.overflow = 'auto'
+  }
+
   return (
     <div className="services-page">
       {/* Banner Section */}
       <div className="page-banner">
         <div className="banner-bg">
-          <img src="/images/image1.jpg" alt="Services Banner" />
+          <img src="/images/image13.jpeg" alt="Services Banner" />
         </div>
         <div className="banner-overlay"></div>
         <div className="container banner-content">
@@ -27,28 +40,49 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Services Section - One Heading with Multiple Images */}
       <div className="container">
         <div className="services-wrapper">
-          {/* Single Heading */}
           <div className="services-header">
-            <h2>What We Offer</h2>
+            <h2>WHAT WE OFFER</h2>
             <p>Explore our comprehensive range of interior design services</p>
+            <div className="services-highlights">
+              <span>✓ Premium quality materials</span>
+              <span>✓ Expert craftsmanship</span>
+            </div>
           </div>
           
-          {/* Multiple Images Grid */}
+          {/* Services Grid with Visible Titles */}
           <div className="services-grid">
             {services.map((service) => (
-              <div key={service.id} className="service-card">
-                <div className="service-image">
+              <div 
+                key={service.id} 
+                className="service-item" 
+                onClick={() => openModal(service)}
+              >
+                <div className="service-image-container">
                   <img src={service.image} alt={service.title} />
+                  <div className="service-overlay">
+                    <FaSearchPlus />
+                    <p>Click to view</p>
+                  </div>
                 </div>
-                <h3>{service.title}</h3>
+                <h3 className="service-title">{service.title}</h3>
               </div>
             ))}
           </div>
         </div>
       </div>
+      
+      {/* Modal for Image Popup - Same as Gallery */}
+      {selectedImage && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedImage.image} alt={selectedImage.title} />
+            <h4>{selectedImage.title}</h4>
+            <button className="modal-close" onClick={closeModal}>×</button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

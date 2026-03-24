@@ -8,19 +8,19 @@ const About = () => {
       {/* Banner Section */}
       <div className="page-banner">
         <div className="banner-bg">
-          <img src="/images/image3.jpg" alt="About Us Banner" />
+          <img src="/images/image3.jpeg" alt="About Us Banner" />
         </div>
         <div className="banner-overlay"></div>
         <div className="container banner-content">
           <h1>About Us</h1>
-          <p>Welcome to the world of Mint Decors</p>
+          <p>Welcome to the world of Feliz</p>
         </div>
       </div>
 
       <div className="container">
         <div className="about-wrapper">
           <div className="about-image">
-            <img src="/images/image1.jpg" alt="Mint Decor Team" />
+            <img src="/images/image7.jpeg" alt="Mint Decor Team" />
           </div>
           
           <div className="about-content">
@@ -43,21 +43,21 @@ const About = () => {
               <FaMapMarkerAlt className="info-icon" />
               <div>
                 <h4>Location</h4>
-                <p>Thiruvananthapuram, Ernakulam</p>
+                <p>Nagavara, Bengaluru</p>
               </div>
             </div>
             <div className="info-item">
               <FaPhone className="info-icon" />
               <div>
                 <h4>Call</h4>
-                <p>+91 952237005, +91 9954062054</p>
+                <p>+91 96200 00929</p>
               </div>
             </div>
             <div className="info-item">
               <FaEnvelope className="info-icon" />
               <div>
                 <h4>Mail</h4>
-                <p>mint.decorind@gmail.com</p>
+                <p>felizinteriors@gmail.com</p>
               </div>
             </div>
           </div>

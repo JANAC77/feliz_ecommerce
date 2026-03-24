@@ -6,14 +6,14 @@ const WhatsAppFloat = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/919036709253?text=Hi! I would like to schedule a FREE site visit for my home interior design.', '_blank')
+    window.open('https://wa.me/919620000929?text=Hi! I would like to schedule a FREE site visit for my home interior design.', '_blank')
   }
 
   return (
     <div className="whatsapp-float">
       {!isOpen && (
         <button className="whatsapp-button" onClick={() => setIsOpen(true)}>
-          <FaWhatsapp />
+          <FaWhatsapp /> 
         </button>
       )}
       

@@ -5,7 +5,7 @@ import AboutCompany from '../components/home/AboutCompany'
 import Projects from '../components/home/Projects'
 import Testimonials from '../components/home/Testimonials'
 import ContactForm from '../components/home/ContactForm'
-import WhatsAppFloat from '../components/home/WhatsAppFloat'
+
 
 const Home = () => {
   return (
@@ -16,7 +16,6 @@ const Home = () => {
       <Projects />
       <Testimonials />
       <ContactForm />
-      <WhatsAppFloat />
     </>
   )
 }

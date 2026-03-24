@@ -103,6 +103,10 @@
   flex-shrink: 0;
 }
 
+.rotate-icon {
+  transform: rotate(90deg);
+}
+
 .info-card h4 {
   font-size: 0.9rem;
   color: #B8860B;

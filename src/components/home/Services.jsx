@@ -8,7 +8,7 @@ const Services = () => {
         <div className="services-grid">
           <div className="service-card">
             <div className="service-image">
-              <img src="/images/image2.jpg" alt="Modular Kitchen" />
+              <img src="/images/image16.jpeg" alt="Modular Kitchen" />
             </div>
             <div className="service-content">
               <h3>MODULAR KITCHEN</h3>
@@ -19,7 +19,7 @@ const Services = () => {
           
           <div className="service-card">
             <div className="service-image">
-              <img src="/images/image1.jpg" alt="Turn-Key Segment" />
+              <img src="/images/image3.jpeg" alt="Turn-Key Segment" />
             </div>
             <div className="service-content">
               <h3>Turn-Key Segment</h3>
@@ -36,7 +36,7 @@ const Services = () => {
           
           <div className="service-card">
             <div className="service-image">
-              <img src="/images/image3.jpg" alt="Office Segment" />
+              <img src="/images/image13.jpeg" alt="Office Segment" />
             </div>
             <div className="service-content">
               <h3>Office Segment</h3>

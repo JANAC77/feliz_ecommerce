@@ -2,6 +2,8 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
+import WhatsAppFloat from '../home/WhatsAppFloat'
+
 
 const Layout = () => {
   return (
@@ -11,6 +13,7 @@ const Layout = () => {
         <Outlet />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </>
   )
 }

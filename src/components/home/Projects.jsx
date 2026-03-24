@@ -3,12 +3,12 @@ import { FaSearchPlus } from 'react-icons/fa'
 import './Projects.css'
 
 const projects = [
-  { id: 1, title: 'Modular Kitchen', category: 'kitchen', image: '/images/image1.jpg' },
-  { id: 2, title: 'Wooden & Creating Units', category: 'wooden', image: '/images/image2.jpg' },
-  { id: 3, title: 'Study Tables', category: 'study', image: '/images/image3.jpg' },
-  { id: 4, title: 'Cots', category: 'bed', image: '/images/image2.jpg' },
-  { id: 5, title: 'TV Units', category: 'tv', image: '/images/image1.jpg' },
-  { id: 6, title: 'Turn-Key Segment', category: 'turnkey', image: '/images/image3.jpg' }
+  { id: 1, title: 'Modular Kitchen', category: 'kitchen', image: '/images/image3.jpeg' },
+  { id: 2, title: 'Wooden & Creating Units', category: 'wooden', image: '/images/image4.jpeg' },
+  { id: 3, title: 'Study Tables', category: 'study', image: '/images/image10.jpeg' },
+  { id: 4, title: 'Cots', category: 'bed', image: '/images/image7.jpeg' },
+  { id: 5, title: 'TV Units', category: 'tv', image: '/images/image8.jpeg' },
+  { id: 6, title: 'Turn-Key Segment', category: 'turnkey', image: '/images/image13.jpeg' }
 ]
 
 const Projects = () => {
