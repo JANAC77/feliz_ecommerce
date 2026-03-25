@@ -1,0 +1,143 @@
+/* ===== SECTION ===== */
+.process-steps {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== HEADER ===== */
+.steps-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.steps-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2C2C2C;
+}
+
+/* ===== STEP LINE ===== */
+.steps-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 2rem 0 3rem;
+}
+
+/* horizontal line */
+.steps-line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background: #ddd;
+  z-index: 1;
+}
+
+/* step circle */
+.step-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ddd;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  z-index: 2;
+}
+
+/* active step */
+.step-circle.active {
+  background: #C9A03D;
+  color: #fff;
+}
+
+/* ===== CONTENT AREA ===== */
+.steps-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* LEFT TEXT */
+.steps-text {
+  flex: 1;
+}
+
+.steps-text h3 {
+  font-size: 1.6rem;
+  color: #2C2C2C;
+  margin-bottom: 1rem;
+}
+
+.steps-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* RIGHT IMAGE */
+.steps-image {
+  flex: 1;
+  text-align: center;
+}
+
+.steps-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== BUTTON ===== */
+.steps-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.book-btn {
+  background: #C9A03D;
+  color: white;
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #B8860B;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .steps-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .steps-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .steps-text p {
+    font-size: 0.9rem;
+  }
+}

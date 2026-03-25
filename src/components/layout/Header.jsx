@@ -40,7 +40,7 @@ const Header = () => {
       {/* Top Bar */}
       <div className="top-bar">
         <p>
-          Welcome Feliz Interiors, Based On <span>India</span>
+      Welcome to Feliz Interiors - Premium Residential Interior Designers in Bangalore, <span>India</span>
         </p>
       </div>
 

@@ -1,23 +1,59 @@
 .services {
   padding: 4rem 0;
   background: white;
+  width: 100%;
 }
 
+/* Section Header */
+.services-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-header h2 {
+  font-size: 2rem;
+  color: #B8860B;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.services-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #C9A03D;
+  border-radius: 2px;
+}
+
+.services-header p {
+  font-size: 0.95rem;
+  color: #5A5A5A;
+  margin-top: 1rem;
+}
+
+/* Services Grid - FORCE 4 CARDS IN ONE ROW */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.5rem;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
+/* Ensure cards don't wrap */
 .service-card {
   background: #FEFAF2;
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.3s ease;
   border: 1px solid #F0EAE0;
+  width: 100%;
 }
 
 .service-card:hover {
@@ -44,57 +80,78 @@
 }
 
 .service-content {
-  padding: 1.5rem;
+  padding: 1.2rem;
+  text-align: center;
 }
 
 .service-content h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #B8860B;
   margin-bottom: 0.5rem;
-}
-
-.service-award {
-  font-size: 0.8rem;
-  color: #C9A03D;
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 
 .service-content p {
-  font-size: 0.9rem;
-  color: #5A5A5A;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.service-content ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.service-content ul li {
   font-size: 0.85rem;
   color: #5A5A5A;
-  padding: 4px 0;
-  padding-left: 20px;
-  position: relative;
+  line-height: 1.5;
+  margin: 0;
 }
 
-.service-content ul li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #C9A03D;
-  font-weight: bold;
-}
+/* ================= RESPONSIVE ================= */
 
-@media (max-width: 768px) {
+/* Tablet (1024px - 4 cards to 2 cards) */
+@media (max-width: 1024px) {
   .services-grid {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.2rem;
   }
   
   .service-image {
-    height: 180px;
+    height: 200px;
+  }
+}
+
+/* Mobile (768px - 2 cards to 1 card) */
+@media (max-width: 768px) {
+  .services {
+    padding: 3rem 0;
+  }
+  
+  .services-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .services-header p {
+    font-size: 0.85rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    padding: 0 1rem;
+    gap: 1.2rem;
+  }
+  
+  .service-image {
+    height: 200px;
+  }
+  
+  .service-content {
+    padding: 1rem;
+  }
+  
+  .service-content h3 {
+    font-size: 1rem;
+  }
+  
+  .service-content p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .service-image {
+    height: 160px;
   }
 }

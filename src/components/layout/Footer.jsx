@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn, FaPinterestP, FaTwitter } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn, FaPinterestP, FaTwitter } from 'react-icons/fa'
 import './Footer.css'
 
 const Footer = () => {
+
   const quickLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
@@ -12,60 +13,62 @@ const Footer = () => {
     { name: 'Contact Us', path: '/contact' }
   ]
 
-  const homeSegment = [
+  const homeInteriors = [
     'Modular Kitchen',
     'Wardrobes',
-    'Wall Units',
+    'TV Units',
     'Crockery Units',
-    'Living room furniture',
-    'Loft Coverings',
-    'Dressing Units'
+    'Living Room Interiors',
+    'Bedroom Interiors',
+    'False Ceiling & Lighting'
   ]
 
-  const officeSegment = [
-    'Modular Workstations',
-    'Furniture & Fixtures for showrooms',
-    'Filling Storage Units',
-    'Conference Tables'
-  ]
-
-  const turnKeySegment = [
-    'Turnkey Solutions for Showrooms',
-    'Complete Furniture and fixtures',
-    'Corporate and home segments'
+  const servicesList = [
+    'Full Home Interiors',
+    'Luxury Interiors',
+    'Renovation Services',
+    'Custom Furniture'
   ]
 
   return (
     <footer className="footer">
       <div className="container">
+
         <div className="footer-grid">
-          {/* Address Section with Logo */}
+
+          {/* Logo + Address */}
           <div className="footer-col">
+
             <div className="footer-logo">
-              <img 
-                src="/images/logo.png" 
-                alt="Mint Decor Logo" 
-                className="footer-logo-img"
-              />
-              <div className="footer-logo-text">
+              <img src="/images/logo.png" alt="Feliz Interiors" />
+              <div>
                 <h2>FELIZ</h2>
                 <span>INTERIORS</span>
               </div>
             </div>
-            <div className="address-section">
+
+            {/* ADDRESS */}
+            <div className="footer-section">
               <h4>ADDRESS</h4>
-              <p>1461, 5th Block, MS Ramaiah North City,<br />
-              Manayata Tech Park, Nagavara,<br />
-              Bengaluru, Karnataka 560077</p>
+              <p>
+                1461, 5th Block, MS Ramaiah North City,<br />
+                Nagavara, Bengaluru,<br />
+                Karnataka 560077
+              </p>
             </div>
-            <div className="contact-section">
+
+            {/* PHONE */}
+            <div className="footer-section">
               <h4>PHONE</h4>
               <p>+91 96200 00929</p>
             </div>
-            <div className="contact-section">
+
+            {/* EMAIL */}
+            <div className="footer-section">
               <h4>EMAIL</h4>
-              <p>felizinteriors@gmail.com<br />marketing.feliz@gmail.com</p>
+              <p>felizinteriors@gmail.com</p>
             </div>
+
           </div>
 
           {/* Quick Links */}
@@ -80,11 +83,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Home Segment */}
+          {/* Home Interiors */}
           <div className="footer-col">
-            <h4>Home Segment</h4>
+            <h4>Home Interiors</h4>
             <ul>
-              {homeSegment.map(item => (
+              {homeInteriors.map(item => (
                 <li key={item}>
                   <Link to="#">{item}</Link>
                 </li>
@@ -92,11 +95,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Office Segment */}
+          {/* Services */}
           <div className="footer-col">
-            <h4>Office Segment</h4>
+            <h4>Our Services</h4>
             <ul>
-              {officeSegment.map(item => (
+              {servicesList.map(item => (
                 <li key={item}>
                   <Link to="#">{item}</Link>
                 </li>
@@ -104,17 +107,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Turn-Key Segment */}
-          <div className="footer-col">
-            <h4>Turn-Key Segment</h4>
-            <ul>
-              {turnKeySegment.map(item => (
-                <li key={item}>
-                  <Link to="#">{item}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         {/* Social Icons */}
@@ -131,8 +123,9 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="footer-bottom">
-          <p>© 2026 All Rights Reserved by Mintdecor.</p>
+          <p>© 2026 Feliz Interiors. All Rights Reserved.</p>
         </div>
+
       </div>
     </footer>
   )

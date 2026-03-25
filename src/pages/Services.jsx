@@ -3,14 +3,13 @@ import { FaSearchPlus } from 'react-icons/fa'
 import './Services.css'
 
 const services = [
-  { id: 1, title: 'Modular Kitchen', image: '/images/image3.jpeg' },
-  { id: 2, title: 'Wardrobes & Dressing Units', image: '/images/image4.jpeg' },
-  { id: 3, title: 'Study Tables', image: '/images/image5.jpeg' },
-  { id: 4, title: 'Cots', image: '/images/image7.jpeg' },
-  { id: 5, title: 'TV Units', image: '/images/image8.jpeg' },
-  { id: 6, title: 'Crockery Units', image: '/images/image9.jpeg' },
-  { id: 7, title: 'Turn-Key Segment', image: '/images/image10.jpeg' },
-  { id: 8, title: 'Office Segment', image: '/images/image11.jpeg' }
+  { id: 1, title: 'Modular Kitchen', image: '/images/image1.avif' },
+  { id: 2, title: 'Wardrobes & Dressing Units', image: '/images/image4.avif' },
+  { id: 3, title: 'Study Tables', image: '/images/image5.webp' },
+  { id: 4, title: 'Cots', image: '/images/image7.webp' },
+  { id: 5, title: 'TV Units', image: '/images/image8.webp' },
+  { id: 6, title: 'Crockery Units', image: '/images/image9.webp' },
+  { id: 7, title: 'Turn-Key Segment', image: '/images/image10.webp' }
 ]
 
 const Services = () => {
@@ -31,7 +30,7 @@ const Services = () => {
       {/* Banner Section */}
       <div className="page-banner">
         <div className="banner-bg">
-          <img src="/images/image13.jpeg" alt="Services Banner" />
+          <img src="/images/image13.webp" alt="Services Banner" />
         </div>
         <div className="banner-overlay"></div>
         <div className="container banner-content">

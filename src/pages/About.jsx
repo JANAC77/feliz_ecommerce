@@ -8,7 +8,7 @@ const About = () => {
       {/* Banner Section */}
       <div className="page-banner">
         <div className="banner-bg">
-          <img src="/images/image3.jpeg" alt="About Us Banner" />
+          <img src="/images/image17.webp" alt="About Us Banner" />
         </div>
         <div className="banner-overlay"></div>
         <div className="container banner-content">
@@ -20,21 +20,24 @@ const About = () => {
       <div className="container">
         <div className="about-wrapper">
           <div className="about-image">
-            <img src="/images/image7.jpeg" alt="Mint Decor Team" />
+            <img src="/images/image3.avif" alt="Mint Decor Team" />
           </div>
           
           <div className="about-content">
-            <p>
-              We are in the interior designing and project execution services based at Kochi for more than one and a half decades. 
-              We have successfully handled hundreds of well appreciated residential and commercial projects across Kerala.
+             <p>
+              Feliz Interiors is a premier residential interior design studio based in Bangalore, 
+              dedicated to creating beautiful, functional homes that reflect our clients' personalities 
+              and lifestyles. With over 10 years of experience, we've transformed over 1000 homes across Bangalore.
             </p>
             <p>
-              We observe and adapt the ever changing designing and interior furnishing trends into our system and provide services 
-              to the extremely demanding furnishing sector. Our innovative skills and creative minds bring in well-defined 2D and 
-              3D designs by understanding the tastes and needs of the clients.
+              We believe that every home has a story to tell. Our team of expert designers works closely with 
+              you to understand your vision, needs, and preferences, bringing your dream home to life with 
+              precision and creativity.
             </p>
             <p>
-              Effective utilization of the available space is the core in every interior design and we fully adhere to the principle.
+              From concept to completion, we handle every aspect of your home interior project - space planning, 
+              material selection, furniture design, lighting, and project management. We use only premium quality 
+              materials and work with trusted partners to ensure your home is built to last.
             </p>
           </div>
           

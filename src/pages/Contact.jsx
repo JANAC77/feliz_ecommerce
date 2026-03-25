@@ -21,7 +21,7 @@ const Contact = () => {
       {/* Banner Section */}
       <div className="page-banner">
         <div className="banner-bg">
-          <img src="/images/image2.jpeg" alt="Contact Us Banner" />
+          <img src="/images/image17.webp" alt="Contact Us Banner" />
         </div>
         <div className="banner-overlay"></div>
         <div className="container banner-content">

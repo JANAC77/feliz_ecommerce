@@ -3,12 +3,12 @@ import { FaSearchPlus } from 'react-icons/fa'
 import './Projects.css'
 
 const projects = [
-  { id: 1, title: 'Modular Kitchen', category: 'kitchen', image: '/images/image3.jpeg' },
-  { id: 2, title: 'Wooden & Creating Units', category: 'wooden', image: '/images/image4.jpeg' },
-  { id: 3, title: 'Study Tables', category: 'study', image: '/images/image10.jpeg' },
-  { id: 4, title: 'Cots', category: 'bed', image: '/images/image7.jpeg' },
-  { id: 5, title: 'TV Units', category: 'tv', image: '/images/image8.jpeg' },
-  { id: 6, title: 'Turn-Key Segment', category: 'turnkey', image: '/images/image13.jpeg' }
+  { id: 1, title: 'Modular Kitchen', category: 'kitchen', image: '/images/image1.avif' },
+  { id: 2, title: 'Wooden & Creating Units', category: 'wooden', image: '/images/image3.avif' },
+  { id: 3, title: 'Study Tables', category: 'study', image: '/images/image10.webp' },
+  { id: 4, title: 'Cots', category: 'bed', image: '/images/image7.webp' },
+  { id: 5, title: 'TV Units', category: 'tv', image: '/images/image8.webp' },
+  { id: 6, title: 'Turn-Key Segment', category: 'turnkey', image: '/images/image13.webp' }
 ]
 
 const Projects = () => {
@@ -19,11 +19,12 @@ const Projects = () => {
       <div className="container">
         <div className="section-header">
           <h2>PROJECT</h2>
-          <h3>RECENTLY COMPLETED WORKS</h3>
-          <p>Adapt to the new changing and highly demanding interior furnishing segment.</p>
+           <h3>RECENTLY COMPLETED HOMES</h3>
+            <p>Beautiful residential interiors designed with love and care</p>
           <div className="project-highlights">
-            <span>State-of-the-art manufacturing facility.</span>
-            <span>Well experienced management and key staff.</span>
+              <span>1000+ Happy Homes</span>
+              <span>Premium Quality Materials</span>
+              <span>Expert Design Team</span>
           </div>
         </div>
         

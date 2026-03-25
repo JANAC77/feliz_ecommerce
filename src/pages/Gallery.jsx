@@ -4,22 +4,22 @@ import './Gallery.css'
 
 const projects = [
   { id: 1, title: 'Modular Kitchen', category: 'kitchen', image: '/images/hero.jpeg' },
-  { id: 2, title: 'Wooden & Creating Units', category: 'wooden', image: '/images/image2.jpeg' },
-  { id: 3, title: 'Study Tables', category: 'study', image: '/images/image3.jpeg' },
-  { id: 4, title: 'Cots', category: 'bed', image: '/images/image4.jpeg' },
-  { id: 5, title: 'TV Units', category: 'tv', image: '/images/image5.jpeg' },
-  { id: 6, title: 'Turn-Key Segment', category: 'turnkey', image: '/images/image7.jpeg' },
-  { id: 7, title: 'Wardrobe Design', category: 'wardrobe', image: '/images/image8.jpeg' },
-  { id: 8, title: 'Living Room', category: 'living', image: '/images/image9.jpeg' },
-  { id: 9, title: 'Dining Table', category: 'dining', image: '/images/image10.jpeg' },
-  { id: 10, title: 'Office Desk', category: 'office', image: '/images/image11.jpeg' },
-  { id: 11, title: 'Bookshelf', category: 'storage', image: '/images/image12.jpeg' },
-  { id: 12, title: 'Sofa Set', category: 'living', image: '/images/image13.jpeg' },
-  { id: 13, title: 'Coffee Table', category: 'living', image: '/images/image14.jpeg' },
-  { id: 14, title: 'Dressing Table', category: 'bedroom', image: '/images/image15.jpeg' },
-  { id: 15, title: 'Shoe Rack', category: 'storage', image: '/images/image16.jpeg' },
-  { id: 16, title: 'Wall Paneling', category: 'wall', image: '/images/image18.jpeg' },
-  { id: 17, title: 'False Ceiling', category: 'ceiling', image: '/images/image19.jpeg' }
+  { id: 2, title: 'Wooden & Creating Units', category: 'wooden', image: '/images/image1.avif' },
+  { id: 3, title: 'Study Tables', category: 'study', image: '/images/image3.avif' },
+  { id: 4, title: 'Cots', category: 'bed', image: '/images/image4.avif' },
+  { id: 5, title: 'TV Units', category: 'tv', image: '/images/image5.webp' },
+  { id: 6, title: 'Turn-Key Segment', category: 'turnkey', image: '/images/image7.webp' },
+  { id: 7, title: 'Wardrobe Design', category: 'wardrobe', image: '/images/image8.webp' },
+  { id: 8, title: 'Living Room', category: 'living', image: '/images/image9.webp' },
+  { id: 9, title: 'Dining Table', category: 'dining', image: '/images/image10.webp' },
+  { id: 10, title: 'Office Desk', category: 'office', image: '/images/image11.webp' },
+  { id: 11, title: 'Bookshelf', category: 'storage', image: '/images/image12.webp' },
+  { id: 12, title: 'Sofa Set', category: 'living', image: '/images/image13.webp' },
+  { id: 13, title: 'Coffee Table', category: 'living', image: '/images/image14.webp' },
+  { id: 14, title: 'Dressing Table', category: 'bedroom', image: '/images/image15.webp' },
+  { id: 15, title: 'Shoe Rack', category: 'storage', image: '/images/image16.webp' },
+  { id: 16, title: 'Wall Paneling', category: 'wall', image: '/images/image18.webp' },
+  { id: 17, title: 'False Ceiling', category: 'ceiling', image: '/images/image19.webp' }
 ]
 
 const Gallery = () => {
@@ -77,7 +77,7 @@ const Gallery = () => {
       {/* Banner Section */}
       <div className="page-banner">
         <div className="banner-bg">
-          <img src="/images/image3.jpeg" alt="Gallery Banner" />
+          <img src="/images/image5.webp" alt="Gallery Banner" />
         </div>
         <div className="banner-overlay"></div>
         <div className="container banner-content">
@@ -88,12 +88,13 @@ const Gallery = () => {
 
       <div className="container">
         <div className="gallery-wrapper">
-          <div className="gallery-header">
-            <h2>RECENTLY COMPLETED WORKS</h2>
-            <p>Adapt to the new changing and highly demanding interior furnishing segment.</p>
+         <div className="gallery-header">
+            <h2>RECENTLY COMPLETED HOMES</h2>
+            <p>Beautiful residential interiors designed with love and care</p>
             <div className="gallery-highlights">
-              <span>✓ State-of-the-art manufacturing facility</span>
-              <span>✓ Well experienced management and key staff</span>
+              <span>✓ 1000+ Happy Homes</span>
+              <span>✓ Premium Quality Materials</span>
+              <span>✓ Expert Design Team</span>
             </div>
           </div>
 

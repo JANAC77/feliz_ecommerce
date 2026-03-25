@@ -7,7 +7,7 @@ const AboutCompany = () => {
       <div className="container">
         <div className="about-grid">
           <div className="about-image">
-            <img src="/images/image2.jpeg" alt="About Feliz" />
+            <img src="/images/image2.avif" alt="About Feliz" />
             <div className="experience-badge">
               <span>10+</span>
               <p>Years of Excellence</p>
@@ -17,10 +17,19 @@ const AboutCompany = () => {
             <h2>ABOUT COMPANY</h2>
             <h3>Welcome To FELIZ INTERIOR Designing Team</h3>
             <p>
-              We are a team of designers who have been working together for over 10 years. We specialise in designing and manufacturing bespoke interior design solutions for our clients. Our team is made up of experienced designers who have a wealth of knowledge and expertise in the field of interior design.
+              Feliz Interiors is a premier residential interior design studio based in Bangalore, 
+              dedicated to creating beautiful, functional homes that reflect our clients' personalities 
+              and lifestyles. With over 10 years of experience, we've transformed over 1000 homes across Bangalore.
             </p>
             <p>
-              We are committed to providing our clients with the highest quality products and services. If you are looking for a designer to help you create the perfect space, then we would love to hear from you. Contact us today to find out how we can help you achieve your interior design goals.
+              We believe that every home has a story to tell. Our team of expert designers works closely with 
+              you to understand your vision, needs, and preferences, bringing your dream home to life with 
+              precision and creativity.
+            </p>
+            <p>
+              From concept to completion, we handle every aspect of your home interior project - space planning, 
+              material selection, furniture design, lighting, and project management. We use only premium quality 
+              materials and work with trusted partners to ensure your home is built to last.
             </p>
             <div className="expertise-badge">
               <span>EXPERIENCED & WELL KNOWLEDGEABLE INTERIOR DESIGNERS.</span>
