@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import {
   FaPhone,
   FaEnvelope,
@@ -7,7 +7,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaBars,
-  FaTimes
+  FaTimes,
 } from "react-icons/fa";
 import "./Header.css";
 
@@ -32,7 +32,7 @@ const Header = () => {
     { path: "/about", label: "About Us" },
     { path: "/services", label: "Service" },
     { path: "/gallery", label: "Gallery" },
-    { path: "/contact", label: "Contact Us" }
+    { path: "/contact", label: "Contact Us" },
   ];
 
   return (
@@ -48,16 +48,16 @@ const Header = () => {
       <div className="main-header">
         <div className="container header-row">
           {/* Logo */}
-          <div className="logo-box">
+          <Link to="/" className="logo-box">
             <img src="/images/logo.png" alt="logo" />
             <h2 className="company-name">
               FELIZ <span>INTERIORS</span>
             </h2>
-          </div>
+          </Link>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="mobile-menu-btn" 
+          <button
+            className="mobile-menu-btn"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -71,7 +71,7 @@ const Header = () => {
                 key={link.path}
                 to={link.path}
                 end={link.end}
-                className={({ isActive }) => isActive ? "active" : ""}
+                className={({ isActive }) => (isActive ? "active" : "")}
                 onClick={closeMenu}
               >
                 {link.label}
@@ -118,8 +118,12 @@ const Header = () => {
           <div className="divider"></div>
 
           <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
+            <a href="#">
+              <FaFacebookF />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
           </div>
         </div>
       </div>
