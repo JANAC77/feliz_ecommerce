@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import {
   FaPhone,
@@ -6,12 +6,37 @@ import {
   FaMapMarkerAlt,
   FaFacebookF,
   FaInstagram,
+  FaBars,
+  FaTimes
 } from "react-icons/fa";
 import "./Header.css";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  const navLinks = [
+    { path: "/", label: "Home", end: true },
+    { path: "/about", label: "About Us" },
+    { path: "/services", label: "Service" },
+    { path: "/gallery", label: "Gallery" },
+    { path: "/contact", label: "Contact Us" }
+  ];
+
   return (
-    <header className="custom-header">
+    <header className={`custom-header ${isScrolled ? "header-scrolled" : ""}`}>
       {/* Top Bar */}
       <div className="top-bar">
         <p>
@@ -22,6 +47,7 @@ const Header = () => {
       {/* Main Header */}
       <div className="main-header">
         <div className="container header-row">
+          {/* Logo */}
           <div className="logo-box">
             <img src="/images/logo.png" alt="logo" />
             <h2 className="company-name">
@@ -29,18 +55,32 @@ const Header = () => {
             </h2>
           </div>
 
-          <nav className="nav-menu">
-            <NavLink to="/" end>
-              Home
-            </NavLink>
-            <NavLink to="/about">About Us</NavLink>
-            <NavLink to="/services">Service</NavLink>
-            <NavLink to="/gallery">Gallery</NavLink>
-            <NavLink to="/contact">Contact Us</NavLink>
+          {/* Mobile Menu Button */}
+          <button 
+            className="mobile-menu-btn" 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+
+          {/* Desktop Navigation */}
+          <nav className={`nav-menu ${isMenuOpen ? "nav-menu-open" : ""}`}>
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.path}
+                to={link.path}
+                end={link.end}
+                className={({ isActive }) => isActive ? "active" : ""}
+                onClick={closeMenu}
+              >
+                {link.label}
+              </NavLink>
+            ))}
           </nav>
 
-          {/* EMPTY RIGHT SPACE (for balance like Mint UI) */}
-          <div></div>
+          {/* Empty div for balance */}
+          <div className="empty-space"></div>
         </div>
       </div>
 
@@ -78,8 +118,8 @@ const Header = () => {
           <div className="divider"></div>
 
           <div className="social-icons">
-            <FaFacebookF />
-            <FaInstagram />
+            <a href="#"><FaFacebookF /></a>
+            <a href="#"><FaInstagram /></a>
           </div>
         </div>
       </div>
