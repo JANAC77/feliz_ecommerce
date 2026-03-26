@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './ProcessSteps.css'
-
+import { Link } from 'react-router-dom'
 const steps = [
   {
     number: '1',
@@ -87,10 +87,13 @@ const ProcessSteps = () => {
 
         {/* BUTTON */}
         <div className="steps-footer">
+        <Link to="/contact">
           <button className="book-btn">
             BOOK FREE DESIGN SESSION
           </button>
+          </Link>
         </div>
+        
 
       </div>
     </section>
