@@ -28,7 +28,7 @@ const Services = () => {
           
           <div className="service-card">
             <div className="service-image">
-              <img src="/images/image3.avif" alt="Office Segment" />
+              <img src="/images/image50.jpeg" alt="Office Segment" />
             </div>
             <div className="service-content">
               <h3>Luxury Interiors</h3>
@@ -38,7 +38,7 @@ const Services = () => {
 
            <div className="service-card">
             <div className="service-image">
-              <img src="/images/image4.avif" alt="Office Segment" />
+              <img src="/images/image46.jpeg" alt="Office Segment" />
             </div>
             <div className="service-content">
               <h3>Renovations</h3>

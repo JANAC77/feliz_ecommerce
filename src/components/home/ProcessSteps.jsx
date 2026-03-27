@@ -5,7 +5,7 @@ const steps = [
   {
     number: '1',
     title: 'Meet Your Designer',
-    description: 'Share your ideas and floor plan to receive personalised 3D designs and an instant quote.',
+    description: 'Share your ideas and floor plan to receive personalised excussion and instant quote.',
     image: '/images/step_1.png'
   },
   {
@@ -89,8 +89,7 @@ const ProcessSteps = () => {
         <div className="steps-footer">
         <Link to="/contact">
           <button className="book-btn">
-            Share your ideas and floor plan to receive personalised excussion and instant quote
-          </button>
+                          Book Your Design Consultation        </button>
           </Link>
         </div>
         

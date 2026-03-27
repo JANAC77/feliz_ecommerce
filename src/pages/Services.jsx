@@ -5,11 +5,10 @@ import './Services.css'
 const services = [
   { id: 1, title: 'Modular Kitchen', image: '/images/image1.avif' },
   { id: 2, title: 'Wardrobes & Dressing Units', image: '/images/image42.jpeg' },
-  { id: 3, title: 'Study Tables', image: '/images/image5.webp' },
-  { id: 4, title: 'Cots', image: '/images/image7.webp' },
-  { id: 5, title: 'TV Units', image: '/images/image8.webp' },
-  { id: 6, title: 'Crockery Units', image: '/images/image9.webp' },
-  { id: 7, title: 'Turn-Key Segment', image: '/images/image10.webp' }
+  { id: 3, title: 'Study Tables', image: '/images/image43.jpeg' },
+  { id: 4, title: 'TV Units', image: '/images/image5.webp' },
+  { id: 5, title: 'Crockery Units', image: '/images/image49.jpeg' },
+  { id: 6, title: 'Turn-Key Segment', image: '/images/image48.jpeg' }
 ]
 
 const Services = () => {
