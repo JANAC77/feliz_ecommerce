@@ -14,7 +14,7 @@ const Hero = () => {
          A highly creative, well-respected, and well-appreciated residential interior design studio specializing in transforming houses into dream homes. We combine innovative design with functional excellence to create spaces that reflect your personality and lifestyle.          </p>
         </div>
         <div className="hero-image">
-          <img src="/images/image12.webp" alt="Luxury Interior Design" />
+          <img src="/images/image39.jpeg" alt="Luxury Interior Design" />
         </div>
       </div>
     </section>

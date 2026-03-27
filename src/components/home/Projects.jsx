@@ -4,9 +4,9 @@ import './Projects.css'
 
 const projects = [
   { id: 1, title: 'Modular Kitchen', category: 'kitchen', image: '/images/image1.avif' },
-  { id: 2, title: 'Wooden & Creating Units', category: 'wooden', image: '/images/image3.avif' },
-  { id: 3, title: 'Study Tables', category: 'study', image: '/images/image10.webp' },
-  { id: 4, title: 'Cots', category: 'bed', image: '/images/image7.webp' },
+  { id: 2, title: 'Wooden & Creating Units', category: 'wooden', image: '/images/image31.jpeg' },
+  { id: 3, title: 'Study Tables', category: 'study', image: '/images/image32.jpeg' },
+  { id: 4, title: 'Cots', category: 'bed', image: '/images/image34.jpeg' },
   { id: 5, title: 'TV Units', category: 'tv', image: '/images/image8.webp' },
   { id: 6, title: 'Turn-Key Segment', category: 'turnkey', image: '/images/image13.webp' }
 ]
@@ -22,7 +22,7 @@ const Projects = () => {
            <h3>RECENTLY COMPLETED HOMES</h3>
             <p>Beautiful residential interiors designed with love and care</p>
           <div className="project-highlights">
-              <span>1000+ Happy Homes</span>
+              <span>470+ Happy Homes</span>
               <span>Premium Quality Materials</span>
               <span>Expert Design Team</span>
           </div>

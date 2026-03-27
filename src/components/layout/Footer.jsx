@@ -52,8 +52,8 @@ const Footer = () => {
               <h4>ADDRESS</h4>
               <p>
                 1461, 5th Block, MS Ramaiah North City,<br />
-                Nagavara, Bengaluru,<br />
-                Karnataka 560077
+                Near Manyata Tech Park, Nagavara,<br />
+                Bengaluru, Karnataka 560077
               </p>
             </div>
 

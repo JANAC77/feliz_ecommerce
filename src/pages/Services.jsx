@@ -4,7 +4,7 @@ import './Services.css'
 
 const services = [
   { id: 1, title: 'Modular Kitchen', image: '/images/image1.avif' },
-  { id: 2, title: 'Wardrobes & Dressing Units', image: '/images/image4.avif' },
+  { id: 2, title: 'Wardrobes & Dressing Units', image: '/images/image42.jpeg' },
   { id: 3, title: 'Study Tables', image: '/images/image5.webp' },
   { id: 4, title: 'Cots', image: '/images/image7.webp' },
   { id: 5, title: 'TV Units', image: '/images/image8.webp' },

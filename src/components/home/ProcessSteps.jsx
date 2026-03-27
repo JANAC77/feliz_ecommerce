@@ -89,7 +89,7 @@ const ProcessSteps = () => {
         <div className="steps-footer">
         <Link to="/contact">
           <button className="book-btn">
-            BOOK FREE DESIGN SESSION
+            Share your ideas and floor plan to receive personalised excussion and instant quote
           </button>
           </Link>
         </div>

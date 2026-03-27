@@ -8,7 +8,7 @@ const Services = () => {
         <div className="services-grid">
           <div className="service-card">
             <div className="service-image">
-              <img src="/images/image1.avif" alt="Modular Kitchen" />
+              <img src="/images/image41.jpg" alt="Modular Kitchen" />
             </div>
             <div className="service-content">
               <h3>Modular Interiors</h3> 
@@ -18,7 +18,7 @@ const Services = () => {
           
           <div className="service-card">
             <div className="service-image">
-              <img src="/images/image2.avif" alt="Turn-Key Segment" />
+              <img src="/images/image40.jpeg" alt="Turn-Key Segment" />
             </div>
             <div className="service-content">
               <h3>Full Home Interiors</h3>

@@ -46,8 +46,8 @@
   --radius-full: 9999px;
   
   /* Fonts */
-  --font-primary: 'Inter', sans-serif;
-  --font-secondary: 'Playfair Display', serif;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
   
   /* Transitions */
   --transition-fast: 0.2s ease;
