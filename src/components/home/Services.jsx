@@ -38,7 +38,7 @@ const Services = () => {
 
            <div className="service-card">
             <div className="service-image">
-              <img src="/images/image46.jpeg" alt="Office Segment" />
+              <img src="/images/image52.png" alt="Office Segment" />
             </div>
             <div className="service-content">
               <h3>Renovations</h3>

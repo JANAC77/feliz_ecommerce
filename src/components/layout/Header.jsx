@@ -49,10 +49,7 @@ const Header = () => {
         <div className="container header-row">
           {/* Logo */}
           <Link to="/" className="logo-box">
-            <img src="/images/logo.png" alt="logo" />
-            <h2 className="company-name">
-              FELIZ <span>INTERIORS</span>
-            </h2>
+            <img src="/images/image51.png" alt="logo" />
           </Link>
 
           {/* Mobile Menu Button */}

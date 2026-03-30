@@ -19,7 +19,7 @@ const AboutCompany = () => {
             <p>
               Feliz Interiors is a premier residential interior design based in Bangalore, 
               dedicated to creating beautiful, functional homes that reflect our clients' personalities 
-              and lifestyles. With over 10 years of experience, we've transformed over 470+ homes across Bangalore.
+              and lifestyles. With over 10 years of experience, we've transformed over 1000+ homes across Bangalore.
             </p>
             <p>
               We believe that every home has a story to tell. Our team of expert designers works closely with 

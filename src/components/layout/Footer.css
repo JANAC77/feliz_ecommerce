@@ -30,28 +30,14 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
   margin-bottom: 1.5rem;
 }
 
 .footer-logo img {
-  height: 55px;
+  height: 150px;
   width: auto;
 }
 
-.footer-logo h2 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #C9A03D;
-  margin: 0;
-  line-height: 1;
-}
-
-.footer-logo span {
-  font-size: 0.65rem;
-  color: #B8860B;
-  letter-spacing: 2px;
-}
 
 /* ===== CONTACT SECTIONS ===== */
 .footer-section {
@@ -202,15 +188,7 @@
 /* Small Mobile */
 @media (max-width: 480px) {
   .footer-logo img {
-    height: 45px;
-  }
-
-  .footer-logo h2 {
-    font-size: 1.3rem;
-  }
-
-  .footer-logo span {
-    font-size: 0.55rem;
+    height: 150px;
   }
 
   .footer-col h4 {

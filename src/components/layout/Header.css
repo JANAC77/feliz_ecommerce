@@ -56,7 +56,7 @@
 }
 
 .custom-header .logo-box img {
-  height: 60px;
+  height: 150px;
   width: auto;
   object-fit: contain;
 }
@@ -348,15 +348,7 @@
   }
 
   .custom-header .logo-box img {
-    height: 45px;
-  }
-
-  .custom-header .company-name {
-    font-size: 1.2rem;
-  }
-
-  .custom-header .company-name span {
-    font-size: 0.65rem;
+    height: 140px;
   }
 
   .custom-header .mobile-menu-btn {

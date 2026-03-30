@@ -5,7 +5,10 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-bg">
-        <img src="/images/hero.jpeg" alt="Hero Background" />
+        <video autoPlay muted loop playsInline className="hero-video">
+          <source src="/images/hero.mp4" type="video/mp4" />
+
+        </video>
       </div>
       <div className="container hero-container">
         <div className="hero-content">
