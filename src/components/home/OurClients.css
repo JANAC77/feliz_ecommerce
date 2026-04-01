@@ -1,0 +1,168 @@
+.our-clients {
+  padding: 4rem 0;
+  background: white;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Simple Header - Only Title */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: #B8860B;
+  margin: 0;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: #C9A03D;
+  border-radius: 2px;
+}
+
+/* Scrolling Container */
+.clients-scroll {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 0;
+}
+
+/* Gradient Overlay for Smooth Edges */
+.clients-scroll::before,
+.clients-scroll::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.clients-scroll::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.clients-scroll::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+/* Scrolling Track */
+.scroll-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: scroll 25s linear infinite;
+  width: fit-content;
+}
+
+/* Pause on Hover */
+.clients-scroll:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+/* Client Image - NO CROPPING */
+.client-image {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  background: #FEFAF2;
+  border: 1px solid #F0EAE0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.client-image:hover {
+  transform: translateY(-5px);
+  border-color: #C9A03D;
+  box-shadow: 0 8px 20px rgba(201, 160, 61, 0.15);
+}
+
+.client-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Scroll Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .client-image {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .scroll-track {
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-clients {
+    padding: 3rem 0;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .client-image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .scroll-track {
+    gap: 1rem;
+    animation-duration: 20s;
+  }
+  
+  .clients-scroll::before,
+  .clients-scroll::after {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .scroll-track {
+    gap: 0.8rem;
+    animation-duration: 15s;
+  }
+}

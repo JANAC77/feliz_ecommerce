@@ -5,6 +5,7 @@ import AboutCompany from '../components/home/AboutCompany'
 import Projects from '../components/home/Projects'
 import ProcessSteps from '../components/home/ProcessSteps'
 import Testimonials from '../components/home/Testimonials'
+import OurClients from '../components/home/OurClients'
 import ContactForm from '../components/home/ContactForm'
 
 
@@ -17,6 +18,7 @@ const Home = () => {
       <Projects />
       <ProcessSteps />
       <Testimonials />
+      <OurClients />
       <ContactForm />
     </>
   )
