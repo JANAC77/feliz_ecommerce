@@ -21,7 +21,16 @@ const projects = [
   { id: 15, title: 'Loft Bed Design', category: 'bedroom', image: '/images/image35.jpeg' },
   { id: 16, title: 'Wall Cabinet with Lights', category: 'storage', image: '/images/image36.jpeg' },
   { id: 17, title: 'Glass Door Wardrobe', category: 'wardrobe', image: '/images/image37.jpeg' },
-  { id: 18, title: 'Corner Study Desk', category: 'study', image: '/images/image38.jpeg' }
+  { id: 18, title: 'Corner Study Desk', category: 'study', image: '/images/image38.jpeg' },
+  { id: 19, title: 'Bathroom Interior 1', category: 'bathroom', image: '/images/image59.jpeg' },
+  { id: 20, title: 'Bathroom Interior 2', category: 'bathroom', image: '/images/image60.jpeg' },
+  { id: 21, title: 'Bathroom Interior 3', category: 'bathroom', image: '/images/image61.jpeg' },
+  { id: 22, title: 'Bathroom Interior 4', category: 'bathroom', image: '/images/image62.jpeg' },
+  { id: 23, title: 'Bathroom Interior 5', category: 'bathroom', image: '/images/image63.jpeg' },
+  { id: 24, title: 'Bathroom Interior 6', category: 'bathroom', image: '/images/image64.jpeg' },
+  { id: 25, title: 'Bathroom Interior 7', category: 'bathroom', image: '/images/image65.jpeg' },
+  { id: 26, title: 'Bathroom Interior 8', category: 'bathroom', image: '/images/image66.jpeg' },
+  { id: 27, title: 'Bathroom Interior 9', category: 'bathroom', image: '/images/image67.jpeg' }
 ]
 
 const Gallery = () => {
@@ -94,7 +103,7 @@ const Gallery = () => {
             <h2>RECENTLY COMPLETED HOMES</h2>
             <p>Beautiful residential interiors designed with love and care</p>
             <div className="gallery-highlights">
-              <span>✓ 470+ Happy Homes</span>
+              <span>✓ 1000+ Happy Homes</span>
               <span>✓ Premium Quality Materials</span>
               <span>✓ Expert Design Team</span>
             </div>
@@ -109,10 +118,9 @@ const Gallery = () => {
           <div className="gallery-grid">
             {currentProjects.map(project => (
               <div key={project.id} className="gallery-item" onClick={() => setSelectedImage(project)}>
-                <img src={project.image} alt={project.title} />
+                <img src={project.image} alt="Project image" />
                 <div className="gallery-overlay">
                   <FaSearchPlus />
-                  <p>{project.title}</p>
                 </div>
               </div>
             ))}
@@ -158,8 +166,7 @@ const Gallery = () => {
       {selectedImage && (
         <div className="modal" onClick={() => setSelectedImage(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage.image} alt={selectedImage.title} />
-            <h4>{selectedImage.title}</h4>
+            <img src={selectedImage.image} alt="Project image" />
             <button className="modal-close" onClick={() => setSelectedImage(null)}>×</button>
           </div>
         </div>

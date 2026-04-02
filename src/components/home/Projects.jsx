@@ -22,7 +22,7 @@ const Projects = () => {
            <h3>RECENTLY COMPLETED HOMES</h3>
             <p>Beautiful residential interiors designed with love and care</p>
           <div className="project-highlights">
-              <span>470+ Happy Homes</span>
+              <span>1000+ Happy Homes</span>
               <span>Premium Quality Materials</span>
               <span>Expert Design Team</span>
           </div>
@@ -31,10 +31,9 @@ const Projects = () => {
         <div className="projects-grid">
           {projects.map(project => (
             <div key={project.id} className="project-item" onClick={() => setSelectedImage(project)}>
-              <img src={project.image} alt={project.title} />
+              <img src={project.image} alt="Project image" />
               <div className="project-overlay">
                 <FaSearchPlus />
-                <p>{project.title}</p>
               </div>
             </div>
           ))}
@@ -44,8 +43,7 @@ const Projects = () => {
       {selectedImage && (
         <div className="modal" onClick={() => setSelectedImage(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage.image} alt={selectedImage.title} />
-            <h4>{selectedImage.title}</h4>
+            <img src={selectedImage.image} alt="Project image" />
             <button className="modal-close" onClick={() => setSelectedImage(null)}>×</button>
           </div>
         </div>

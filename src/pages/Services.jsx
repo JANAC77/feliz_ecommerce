@@ -38,6 +38,12 @@ const services = [
     title: 'Turn-Key Segment',
     image: '/images/image58.jpeg',
     description: 'Experience complete home transformation with our comprehensive turn-key interior solutions. From concept to completion, we handle everything.'
+  },
+  {
+    id: 7,
+    title: 'Bathroom Interior',
+    image: '/images/image60.jpeg',
+    description: 'Design stunning and functional bathrooms with premium fixtures, tiles, and customized storage to create a relaxing sanctuary.'
   }
 ]
 

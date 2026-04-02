@@ -8,7 +8,8 @@ const clients = [
   { id: 4, image: '/images/client4.jpeg' },
   { id: 5, image: '/images/client5.jpeg' },
   { id: 6, image: '/images/client6.jpeg' },
-  { id: 7, image: '/images/client7.jpeg' }
+  { id: 7, image: '/images/client7.jpeg' },
+  { id: 8, image: '/images/client8.jpeg' }
   ]
 
 const OurClients = () => {

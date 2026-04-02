@@ -20,7 +20,8 @@ const Footer = () => {
     'Crockery Units',
     'Living Room Interiors',
     'Bedroom Interiors',
-    'False Ceiling & Lighting'
+    'False Ceiling & Lighting',
+    'Bathroom Interiors'
   ]
 
   const servicesList = [
