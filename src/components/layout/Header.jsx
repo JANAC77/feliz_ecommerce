@@ -27,6 +27,11 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const handleNavClick = () => {
+    closeMenu();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const navLinks = [
     { path: "/", label: "Home", end: true },
     { path: "/about", label: "About Us" },
@@ -69,7 +74,7 @@ const Header = () => {
                 to={link.path}
                 end={link.end}
                 className={({ isActive }) => (isActive ? "active" : "")}
-                onClick={closeMenu}
+                onClick={handleNavClick}
               >
                 {link.label}
               </NavLink>

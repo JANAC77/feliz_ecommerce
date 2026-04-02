@@ -16,9 +16,10 @@ const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState({ type: "", message: "" });
 
   // Replace with your EmailJS credentials
-  const EMAILJS_SERVICE_ID = "service_ifl3ed5";
-  const EMAILJS_TEMPLATE_ID = "template_5j7z96a";
-  const EMAILJS_PUBLIC_KEY = "zLqIambnLhX-FjQAL";
+  // Replace with your EmailJS credentials
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
   const [formData, setFormData] = useState({
     name: "",
