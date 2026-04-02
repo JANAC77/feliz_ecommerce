@@ -44,6 +44,12 @@ const services = [
     title: 'Bathroom Interior',
     image: '/images/image60.jpeg',
     description: 'Design stunning and functional bathrooms with premium fixtures, tiles, and customized storage to create a relaxing sanctuary.'
+  },
+  {
+    id: 8,
+    title: 'All AC works or Installation',
+    image: '/images/image68.jpg',
+    description: 'Professional air conditioning installation and maintenance services to keep your home cool and comfortable. We handle split and window AC units with expert care and efficient service.'
   }
 ]
 

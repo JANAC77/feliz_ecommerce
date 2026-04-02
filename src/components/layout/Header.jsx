@@ -108,7 +108,7 @@ const Header = () => {
             <FaEnvelope />
             <div>
               <h4>Mail</h4>
-              <p>felizinteriors@gmail.com</p>
+              <p>felizinteriors1@gmail.com</p>
             </div>
           </div>
 

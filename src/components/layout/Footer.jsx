@@ -20,7 +20,7 @@ const Footer = () => {
     'Crockery Units',
     'Living Room Interiors',
     'Bedroom Interiors',
-    'False Ceiling & Lighting',
+    
     'Bathroom Interiors'
   ]
 
@@ -63,7 +63,7 @@ const Footer = () => {
             {/* EMAIL */}
             <div className="footer-section">
               <h4>EMAIL</h4>
-              <p>felizinteriors@gmail.com</p>
+              <p>felizinteriors1@gmail.com</p>
             </div>
 
           </div>
